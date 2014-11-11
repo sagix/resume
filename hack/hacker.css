@@ -1,7 +1,7 @@
 body{
     color: #008000;
     background-color: #000;
-    font-family:consolas;
+    font-family:consolas, monospace;
     transition: color .8s ease, background .4s ease;
 }
 
@@ -48,6 +48,15 @@ background: #000;
 }
 .b-title:before {
 border-color:#222; 
+}
+.job,
+.job > em, .job-date,
+.b-sub-desc-item,
+.b-sub-desc-date{
+    background-color: #008000;
+}
+.job-name{
+    color: #222;   
 }
 
 #side-nav {

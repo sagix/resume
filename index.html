@@ -72,7 +72,7 @@
     </p>
 </header>
 
-<section id="competences" class="b-container group">
+<section id="competences" class="container-fix group">
     <h2 class="b-title"><span class="b-title-text">Compétences</span></h2>
 
     <div class="b-3">
@@ -113,104 +113,128 @@
             <ul class="skl-list">
                 <li>git</li>
                 <li>Jenkins</li>
-                <li class="no-print"><a class="sl sl-transparent"
+                <li>Sonar</li>
+                <li class="skl-list-sep"><abbr title="Test Driven Developement">TDD</abbr></li>
+                <li>Agile</li>
+                <li class="skl-list-sep no-print"><a class="sl sl-transparent"
            href="#stickers-wall"
            title="quand l'image dépasse les mots">en image</a></li>
             </ul>
         </section>
     </div>
 </section>
-<section id="formation" class="b-container group">
+<section id="formation" class="container-fix group">
     <h2 class="b-title"><span class="b-title-text">Formation</span></h2>
 
-    <p id="formation-master">
-        Master Analyse et Conception de Système d'Information Sûr, Mention Très Bien, UVSQ</p>
+    <p id="formation-master" class="formation">
+        <a href="http://www.uvsq.fr/master-2-professionnel-analyses-et-conception-de-systemes-d-information-surs-acsis--117236.kjsp">
+            Master Analyse et Conception de Système d'Information Sûr</a>, Mention Très Bien en&nbsp;2011, <a href="http://www.uvsq.fr/"><abbr title="Université de Versaille Saint-Quentin en Yveline">UVSQ</abbr></a></p>
 
-    <p id="formation-licence">
-        Licence Information, Mention Assez Bien, UVSQ
+    <p id="formation-licence" class="formation">
+        <a href="http://www.uvsq.fr/licence-informatique-8283.kjsp">Licence Informatique</a>, Mention Assez Bien en&nbsp;2009, <a href="http://www.uvsq.fr/"><abbr title="Université de Versaille Saint-Quentin en Yveline">UVSQ</abbr></a>
     </p>
 </section>
-<section id="experiences" class="b-container group">
-<h2 class="b-title b-title-break"><span class="b-title-text">Expériences</span></h2>
-<article id="experiences-le-monde" class="b-sub b-sub-android b-sub-content ">
-    <h2 class="b-sub-title">Le Monde
-        <em class="b-sub-desc">
-            <a href="https://play.google.com/store/apps/details?id=com.lemonde.androidapp&amp;hl=fr_FR">Actualité en
-                continu</a>
-            -
-            <a href="https://play.google.com/store/apps/details?id=com.lemonde.androidapp.journal&amp;hl=fr_FR">Journal</a></em>
-    </h2>
+<section id="experiences" class="group">
+    <div class="container-fix">
+        <h2 class="b-title b-title-break"><span class="b-title-text">Expériences</span></h2>
+    </div>
+<section class="job">
+    <em>avec</em>
+    <h2 class="job-name">Omnilog</h2>
+    <stong class="job-date">depuis oct. 2012</strong>
+</section>
+<div class="container-fix">
+<article id="experiences-le-monde" class="b-container b-sub b-sub-android b-sub-content ">
+    <h2 class="b-sub-title b-sub-title-job">Le Monde</h2>
+    <p class="b-sub-desc">
+        <strong class="b-sub-desc-date">depuis <time datetime="2014-03">mars 2014</time></strong>
+        <a class="b-sub-desc-item" href="https://play.google.com/store/apps/details?id=com.lemonde.androidapp&amp;hl=fr_FR">Actualité en
+            continu</a>
+        -
+        <a class="b-sub-desc-item" href="https://play.google.com/store/apps/details?id=com.lemonde.androidapp.journal&amp;hl=fr_FR">Journal</a>
+    </p>
+    <section>
+        <h2><a href="https://play.google.com/store/apps/details?id=com.lemonde.androidapp&amp;hl=fr_FR">Le Monde, actualité en continu</a></h2>
+        <ul>
+            <li>Contenu éditorial fort, présentation via HTML/CSS&nbsp;;</li>
+            <li>Application accessible hors ligne (liste + article)&nbsp;;</li>
+            <li>Partage de connexion entre applications&nbsp;;</li>
+            <li>Ouverture d'un article via newsletter, facebook, twitter, notification...</li>
+        </ul>
+    </section>
+    <section>
+        <h2><a href="https://play.google.com/store/apps/details?id=com.lemonde.androidapp.journal&amp;hl=fr_FR">Le Monde, journal</a></h2>
+        <ul>
+            <li>Correction et stabilisation de l'application&nbsp;;</li>
+            <li>Achat in-app, migration in-app billing v1 au v3&nbsp;;</li>
+            <li>Télécharge des éditions&nbsp;;</li>
+            <li>Lecture des éditions PDF&nbsp;;</li>
+        </ul>
+    </section>
     <section>
         <h2>Intégration continue et qualité</h2>
-        <p>
-            Au début du projet, presque qu'aucun outil n'était en place pour construire les livrables,
-            et pour le peu qu'il y avait, personne ne lui faisait confiance.<br/>
-            Un objectif de cette mission était de pallier à cette situation en mettant en place un système de <em>build</em> d'intégration continue,
-            ainsi que des outils de mesure de qualité.<br/>
-            Pour le build, ant a été remplacé par <a href="http://www.gradle.org/">Gradle</a> et au niveau IDE, Eclipse par <a href="https://developer.android.com/sdk/installing/studio.html">Android Studio</a>.
-            Gradle étant plus souple, il a été plus facile de construire des applications pour les différents stores, à l'aide des <em>flavours</em>.<br/>
-            Puis pour l'intégration, <a href="http://jenkins-ci.org/">Jenkins</a> a été mise à niveau et publie automatiquement les livrables sur <a href="http://hockeyapp.net">HockeyApp</a> à chaque push sur <a href="http://git-scm.com/">git</a>. Afin qu'une version <em>dogfood</em> reflète le développement courant, et que les <em>releases</em> puissent être testables facilement.<br/>
-            À ce moment, des mesures sont faites avec
-            <a href="http://developer.android.com/tools/help/lint.html">lint</a>,
-            <a href="http://checkstyle.sourceforge.net/">Checkstyle</a>,
-            <a href="http://pmd.sourceforge.net/">PMD</a> et 
-            <a href="http://findbugs.sourceforge.net/">FindBugs</a>.<br/>
-            De plus, les tests unitaires sont exécutés par <a href="http://junit.org/">JUnit</a>,
-            et la couverture de code est mesurée par <a href="http://www.eclemma.org/jacoco/">JaCoCo</a>.<br/>
-            Tous ces outils permettent de garder une qualité constante. La suite sera d'automatiser les tests fonctionnels.
-        </p>
-    </section>
-    <section>
-        <h2>Le Monde, actualité en continu</h2>
-        <p>
-            L'application était déjà présente sur le store depuis des mois, la première étape fut de la stabiliser
-            à moindre coût afin qu'elle soit utilisable, et de faire remonter la note sur le store.<br/>
-            En parallèle, la refonte de l'application a pu commencer.<br/>
-            Même si l'application a l'air en apparence, elle hérite de la complexité et la richesse du journal que ce soit en typographie, en mise en page, et dans la hiérarchisation de l'information. Il faut alors gérer de nombreuses vues, factoriser et optimiser le code, afin de garder une application fluide, et la moins consommatrice en mémoire, batterie et réseau.
-        </p>
-    </section>
-    <section>
-        <h2>Le Monde, journal</h2>
-        <p>
-            Cette application permet de lire l'édition papier au format numérique sur tout support, du smartphone à la tablette.
-            Elle était précédemment incluse avec l'application principale, mais pour la refonte de celle-ci il a été choisi de la dissocier.
-            Dans un premier temps, elle fut juste séparée, et un module d'authentification était partagé entre les deux applications.
-            Puis au vu des commentaires sur le store, du temps a de nouveau alloué à cette application pour augmenter sa qualité.<br/>
-            Niveau technique, avec l'expérience accumulée sur la l'actualité en continu, un  <em>build</em> aussi solide a été mis en place. Et, l'arrivée
-            d'Android 5.0 a permis de remplacer certaines librairies et augmenter les performances.
-        </p>
+        <ul>
+            <li>Migration de d'ant à <a class="link-tag" href="http://www.gradle.org/">Gradle</a> (build)&nbsp;;</li>
+            <li>Remplacement d'Eclipse par <a class="link-tag" href="https://developer.android.com/sdk/installing/studio.html">Android Studio</a>&nbsp;;</li>
+            <li>Utilisation de flavor pour version interne, <em>Google Play</em>, <em>Samsung Apps</em>, <em>Amazon</em>&nbsp;;</li>
+            <li>Automatisation de construction de livrable par <a class="link-tag" href="http://jenkins-ci.org/">Jenkins</a>&nbsp;;</li>
+            <li>Déploiement interne et remontée de bugs via <a class="link-tag" href="http://hockeyapp.net">HockeyApp</a>&nbsp;;</li>
+            <li>Contrôle de la qualité via <a class="link-tag" href="http://www.sonarqube.org/">Sonar</a>&nbsp;;</li>
+            <li>Injection de dépendances <a class="link-tag" href="http://square.github.io/dagger/">Dagger</a>&nbsp;;</li>
+            <li>Mesure de la qualité via 
+                <a class="link-tag" href="http://developer.android.com/tools/help/lint.html">lint</a>,
+                <a class="link-tag" href="http://checkstyle.sourceforge.net/">Checkstyle</a>,
+                <a class="link-tag" href="http://pmd.sourceforge.net/">PMD</a> et 
+                <a class="link-tag" href="http://findbugs.sourceforge.net/">FindBugs</a>&nbsp;;
+            </li>
+            <li>Tests unitaires avec <a class="link-tag" href="http://junit.org/">JUnit</a>, couverture de code par <a class="link-tag"  href="http://www.eclemma.org/jacoco/">JaCoCo</a>, et mock avec <a class="link-tag"  href="http://easymock.org/">EasyMock</a>&nbsp;;</li>
+            <li>Tests d'interfaces avec <a class="link-tag"  href="http://robolectric.org/">Robolectric</a>.</li>
+        </ul>
     </section>
 </article>
-<article id="experiences-bouygues-telecom" class="b-sub b-sub-web b-sub-content ">
-    <h2 class="b-sub-title">Bouygues Telecom
-        <em class="b-sub-desc">Espace Client Mobile</em></h2>
-
-    <p>Site web mobile disponible pour toutes les lignes de marché.</p>
-
-    <p>Il évolue pour rattraper son retard sur les technologies web, les tendances de design et les "nouveaux"
-        formats d'écran.</p>
-
-    <p>Un important travail a été fait sur la partie présentation, avec la création d'un build grunt,
-        servant à compiler et fusionner un framework <abbr title="Cascading Style Sheets">CSS</abbr> se basant sur la méthodologie <a href="https://smacss.com/"><abbr title="Scalable and modular Architecture for CSS">SMACSS</abbr></a> et le pré-processeur
-        <a href="http://lesscss.org/">Less</a>.
-        Ainsi que l'assemblage d'un framework javascript fusionnant des fichiers javascript en les optimisant et
-        passant des tests unitaires.
-        Une validation syntaxique est passée tant sur le CSS que sur le javascript.</p>
-
-    <p>Un second travail a été fait sur les images pour qu'elles soient responsives et s'adaptent à la densité de
-        l'écran.</p>
-    
-    <p>Ce travail et cette recherche a donné lieu à une présentation sur
-        <a href="http://slides.com/nicolasmouchel/responsive-web-design#/">Responsive Web Design</a>.
+<article id="experiences-bouygues-telecom" class="b-container b-sub b-sub-web b-sub-content ">
+    <h2 class="b-sub-title b-sub-title-job">Bouygues Telecom</h2>
+        <p class="b-sub-desc">
+            <strong class="b-sub-desc-date"> de <time datetime="2013-06">juin 2013</time> à
+                <time datetime="2014-02">fév. 2014</time></strong>
+            <span class="b-sub-desc-item" > Espace Client Mobile </span></p>
+        <section>
+            <h2>Framework Front-end</h2>
+            <ul>
+                <li><em>Responsive Web Design</em> et <em>Mobile First</em>&nbsp;;</li>
+                <li>Utilisation de la méthode <a class="link-tag" href="https://smacss.com/"><abbr title="Scalable and modular Architecture for CSS">SMACSS</abbr></a>&nbsp;;</li>
+                <li>Construction du build via <a class="link-tag" href="http://gruntjs.com/">Grunt</a>&nbsp;;</li>
+                <li>Mesure de qualité avec <a class="link-tag" href="https://github.com/CSSLint/csslint">CSSLint</a>
+                    et <a class="link-tag" href="https://github.com/jshint/jshint/">JSHint</a>&nbsp;;</li>
+                <li>Image de bonne qualité, sur tout type de support&nbsp;;</li>
+                <li>Tests unitaires pour le javascript avec
+                    <a class="link-tag" href="http://casperjs.org/">CasperJS</a>&nbsp;;</li>
+                <li>Pages d'exemples exhaustives,  pour le CSS&nbsp;;</li>
+                <li>Refonte partielle du site, et mise à jour de toutes les anciennes pages.</li>
+            </ul>
+            <p>Ce travail et cette recherche ont donné lieu à une présentation sur le
+                <a class="link-tag" href="http://slides.com/nicolasmouchel/responsive-web-design#/">Responsive Web Design</a>.
+            </p>
+        </section>
+        <section>
+            <h2>Back-end</h2>
+            <ul>
+            <li>Ecriture de nombres modules JSF reliés au front-end&nbsp;;</li>
+            <li>Participation à la migration java/jboss 5 à java/jboss 7&nbsp;;</li>
+            <li>Test unitaires, avec JUnit, puis TestNG&nbsp;;</li>
+            <li>Augmentation de la couverture de code de 3% à 40%<br/>(et nouveau code testé à 60-80%)&nbsp;;</li>
+            <li>Appel de Web Services SOAP.</li>
+            </ul>
+        </section>
+    </ul>
+</article>
+<article id="experiences-eurosport" class="b-container b-sub b-sub-android b-sub-content ">
+    <h2 class="b-sub-title b-sub-title-job">Eurosport</h2>
+    <p class="b-sub-desc">
+        <strong class="b-sub-desc-date"> de <time datetime="2013-03">mars 2013</time> à
+            <time datetime="2013-05">mai 2013</time></strong>
+        <a class="b-sub-desc-item" href="https://play.google.com/store/apps/details?amp;id=com.eurosport.player&amp;hl=fr_FR"> Eurosport Player </a>    
     </p>
-
-    <p>Derrière tout ça le site est fait en jee/java7, avec JSF et tournant sur jboss7,
-        avec un build comprenant de nombreux tests unitaires.</p>
-</article>
-<article id="experiences-eurosport" class="b-sub b-sub-android b-sub-content ">
-    <h2 class="b-sub-title">Eurosport
-        <em class="b-sub-desc"><a href="https://play.google.com/store/apps/details?amp;id=com.eurosport.player&amp;hl=fr_FR">Eurosport
-            Player</a></em></h2>
 
     <p>La mission porte sur l’application Eurosport Player, et est divisée en plusieurs objectifs principaux :</p>
     <ol>
@@ -218,7 +242,7 @@
             (plantages et ANR)
         </li>
         <li>Décommissionnement du Back-Office en python spécifique à Android (mutualisation avec iOS)</li>
-        <li>3. Mise en place d’un système de payement via Ogone</li>
+        <li>Mise en place d’un système de payement via Ogone</li>
     </ol>
 
 
@@ -236,18 +260,22 @@
         <li>Simplification de l’interface&nbsp;;</li>
         <li>Meilleure intégration à Android 4.2&nbsp;;</li>
         <li>Tests approfondis sur les ruptures de connexion&nbsp;;</li>
-        <li>Intégration du Google Analytics&nbsp;;</li>
+        <li>Intégration de Google Analytics&nbsp;;</li>
+        <li>Test Unitaires&nbsp;;</li>
         <li>Optimisation du code.</li>
     </ul>
     <p>
         Compétences Techniques :
-        Android (4.2) – XML – Json – Jackson – WebService – HTML</p>
+        Android (4.2) – JUnit - XML – Json – Jackson – WebService – HTML</p>
 
 </article>
-<article id="experiences-arte" class="b-sub b-sub-android b-sub-content ">
-    <h2 class="b-sub-title">ARTE
-        <em class="b-sub-desc"><a href="https://play.google.com/store/apps/details?id=tv.arte.plus7&amp;hl=fr_FR">application
-            ARTE</a></em></h2>
+<article id="experiences-arte" class="b-container b-sub b-sub-android b-sub-content ">
+    <h2 class="b-sub-title b-sub-title-job">ARTE</h2>
+    <p class="b-sub-desc">
+        <strong class="b-sub-desc-date"> au mois de <time datetime="2013-02">fév. 2013</time></strong>
+        <a class="b-sub-desc-item" href="https://play.google.com/store/apps/details?id=tv.arte.plus7&amp;hl=fr_FR"> application
+            ARTE </a>
+    </p>
 
     <p>La mission consiste à réaliser une refonte de l'application ARTE Android
         afin de regrouper les fonctionnalités des applications tablettes et smartphones
@@ -285,9 +313,13 @@
         Android (4.2) - XML - Json - Jackson - WebService – HTML</p>
 
 </article>
-<article id="experiences-ratp" class="b-sub b-sub-web b-sub-content ">
-    <h2 class="b-sub-title">RATP
-        <em class="b-sub-desc">Coppelia</em></h2>
+<article id="experiences-ratp" class="b-container b-sub b-sub-web b-sub-content ">
+    <h2 class="b-sub-title b-sub-title-job">RATP</h2>
+        <p class="b-sub-desc">
+            <strong class="b-sub-desc-date"> de <time datetime="2013-10">oct. 2012</time> à
+                <time datetime="2013-01">janv. 2013</time></strong>
+            <span class="b-sub-desc-item"> Coppelia </span>
+    </p>
 
     <p>Au sein d’un projet au forfait, Nicolas a intégré une équipe de 3 personnes en tant qu’ingénieur études et
         développement.
@@ -311,9 +343,19 @@
         Windows - SQLServer - SSIS - PHP - HTML/CSS - JavaScript - Ajax</p>
 
 </article>
-<article id="experiences-bnp-cardif" class="b-sub b-sub-content b-sub-gears">
-    <h2 class="b-sub-title">BNP Cardif
-        <em class="b-sub-desc">Back office</em></h2>
+</div>
+<section class="job job-break">
+    <em>avec</em>
+    <h2 class="job-name">Sopra Group</h2>
+    <strong class="job-date">de <time datetime="2011-03">mars 2011</time> à <time datetime="2012-09">sept. 2012</time></strong>
+</section>
+<div class="container-fix">
+<article id="experiences-bnp-cardif" class="b-container b-sub b-sub-content b-sub-gears">
+    <h2 class="b-sub-title b-sub-title-job">BNP Cardif</h2>
+        <p class="b-sub-desc">
+            <strong class="b-sub-desc-date"> de <time datetime="2011-03">mars 2011</time> à
+                <time datetime="2012-09">sept. 2012</time></strong>
+            <span class="b-sub-desc-item" > Back office </span></p>
 
     <p>
         Acteur mondial en assurance des personnes, BNPPA Cardif est présent dans 36 pays et emploie près de 9000
@@ -350,9 +392,19 @@
         UML - Unix - Windows - Oracle - Java/J2EE - XML - XSL - XSD - Maven</p>
 
 </article>
-<article id="experiences-anysoft-conseils" class="b-sub b-sub-content ">
-    <h2 class="b-sub-title">AnySoft Conseils
-        <em class="b-sub-desc">cartographie</em></h2>
+</div>
+<section class="job job-break">
+    <em>en tant que</em>
+    <h2 class="job-name">Freelance</h2>
+    <strong class="job-date">de <time datetime="2009">2009</time> à <time datetime="2011">2011</time></strong>
+</section>
+<div class="container-fix">
+<article id="experiences-anysoft-conseils" class="b-container b-sub b-sub-content ">
+    <h2 class="b-sub-title b-sub-title-job">AnySoft Conseils</h2>
+    <p class="b-sub-desc">
+    <strong class="b-sub-desc-date"> de <time datetime="2010-06">juin 2010</time> à
+                <time datetime="2010-09">sept. 2010</time></strong>
+    <span class="b-sub-desc-item" > cartographie </span></p>
 
     <p>Pour le compte d’AnySoft Conseils, société de conseil et de services, un outil de représentation de données cartographiques a été développé.</p>
 
@@ -368,8 +420,9 @@
     <p>Compétences Techniques :
         C# - Silverlight - XML</p>
 </article>
+</div>
 </section>
-<section id="stickers-wall" class="b-container group no-print">
+<section id="stickers-wall" class="container-fix group no-print">
     <h2 class="b-title"><span class="b-title-text">Stickers' Wall</span></h2>
 
     <p class="sw-container">
@@ -425,7 +478,7 @@
                 <li><a class="sn-link-2" href="#experiences-anysoft-conseils">Anysoft Conseils</a></li>
             </ul>
         </li>
-        <li><a class="sn-link-1" href="#stickers-wall">Stickers' wall</a></li>
+        <li><a class="sn-link-1" href="#stickers-wall">Stickers' Wall</a></li>
     </ul>
 </nav>
 <nav class="nav-bar">
@@ -473,5 +526,5 @@
   ga('send', 'pageview');
 
 </script>
-</body>
 </html>
+</body>
