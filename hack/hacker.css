@@ -1,0 +1,116 @@
+body{
+    color: #008000;
+    background-color: #000;
+    font-family:consolas;
+    transition: color .8s ease, background .4s ease;
+}
+
+@media (min-width: 1000px){
+.h-container {
+    box-shadow: none;
+    border-left: 3px double #008000;
+}
+}
+
+audio{
+    display:block;
+    margin:auto;
+    width: 100%;
+    height: 3rem;
+max-width: 30rem;
+margin-bottom: -3.3rem;
+    margin-top: .3rem;
+}
+
+.h-avatar{
+    -webkit-filter: contrast(10)grayscale(.9);   
+}
+.h-title{
+ -webkit-animation: anim-font-green 3s linear 2s infinite; /* Chrome, Safari, Opera */
+    animation:anim-font-green 3s linear 2s infinite; /* Standard syntax */   
+}
+
+.b-sub{
+    background-color: #0a0a0a;  
+    border-bottom: .3rem solid #222;
+    border-radius: 0rem;
+}
+.b-sub-android,
+.b-sub-web,
+.b-sub-gears{
+    background-image: none;
+}
+.b-sub-title{
+    border-bottom-color: #222;   
+}
+.b-title-text {
+background: #000;
+}
+.b-title:before {
+border-color:#222; 
+}
+
+#side-nav {
+    background-color: rgba(0, 0, 0, .9);
+    box-shadow: none;
+    border-right: 3px double #008000;
+}
+
+.sn-link-1 {
+background-color: #008000;
+border-bottom-color: #004400;
+color: #222;
+}
+.sn-link-1:focus,
+.sn-link-1:hover {
+background-color:#008800;
+color: #000;
+}
+.sn-link-2 {
+    color: #008000;
+}
+.sn-link-2:focus,
+.sn-link-2:hover {
+background-color: #004400;
+    color: #ddd;
+}
+
+.sl-twitter,
+.sl-github,
+.sl-stackoverflow,
+.sl-linkedin,
+.sl-deviantart{
+background-color: #008000;
+    border-radius:0;
+    border: 4px groove #008800;
+}
+.sl:active{
+    border-style: ridge;
+}
+
+#btn-menu{
+    color:#bbb;   
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes anim-font-green {
+    0%   {color: #008000;}
+    28%  {color: #008000;}
+    29%  {color: #004000;}
+    30%  {color: #008000;}
+    30%  {color: #008000;}
+    33%  {color: #004000;}
+    34%  {color: #008000;}
+    100% {color: #008000;}
+}
+
+/* Standard syntax */
+@keyframes anim-font-green {
+    0%   {color: #008000;}
+    28%  {color: #008000;}
+    29%  {color: #004000;}
+    30%  {color: #008000;}
+    33%  {color: #004000;}
+    34%  {color: #008000;}
+    100% {color: #008000;}
+}
