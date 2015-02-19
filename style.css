@@ -124,6 +124,7 @@ body{
     .b-sub{
         border:none;
         margin-bottom:0;
+        margin-top: -.4rem;
     }
 }
 .b-sub-content > section> h2{
@@ -230,7 +231,7 @@ body{
 }
 .b-sub-title-job{
     font-size: 3.0rem;
-    padding:1.6rem 0;    
+    padding:  1.6rem .6rem .6rem 1.6rem   
 }
 .b-sub-desc{
     margin: 0;
@@ -239,37 +240,29 @@ body{
     color:#fff;
     font-weight:normal;
     font-style: normal;
-}
-.b-sub-desc-item{
-    display: inline-block;
-    background-color: #ddd;
-    padding: .4rem 1rem;
+    float:right;
+    margin-top: 2.2rem;
+    background-color: #888;
     color: #fff;
-    text-decoration: none;    
+    padding: .4rem 1rem;
 }
 .b-sub-desc-date{
-    float: right;
-    font-weight: normal;
-    background-color: #888;
-    padding: .4rem 1rem;
-    color: #fff;
+    font-weight: normal;   
 }
-
-@media (max-width:639px){
+@media (max-width:800px){
     .b-sub-desc{
         text-align: center;
-    }
-    .b-sub-desc-item,
-    .b-sub-desc-date{
-        display: inline-block;
-        float:none;
-        margin: .2rem 1rem;
+        margin: 0 auto;
+        float: inherit;
     }
 }
 
 .skl-list{
     list-style:none;
     padding:0;
+}
+.skl-list-first{
+    margin-bottom:0;
 }
 .skl-list > li{
     display: inline;
@@ -564,9 +557,10 @@ body{
 
 .loc-item{
     display: inline-block;
-    width:7.2rem;
+    width:6rem;
     text-align: center;
     color: #888;
+    font-size: .9em;
 }
 
 .loc-icon{
@@ -583,4 +577,11 @@ body{
 }
 .clr-left{
     clear: left;
+}
+.a-title-alone{
+    display: block;
+    padding-top: .6rem;      
+}
+.dont-break{
+    page-break-inside: avoid;
 }
