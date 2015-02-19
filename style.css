@@ -197,7 +197,18 @@ body{
         padding-right: 0;
     }
 }
-@media(min-width:900px), print{
+@media(min-width:900px), (max-width:480px),  print{
+    .b-sub-stars{
+        display: block;   
+    }
+    
+    .skl-list {
+        clear: left;
+        text-align: center;
+        margin: 0 1.6rem .8rem;
+    }
+}
+@media(min-width:900px),   print{
     .b-2{
         width:50%;
         display: inline-block;
@@ -205,14 +216,6 @@ body{
     }
     .b-1{
         clear:left;
-    }
-    .b-sub-stars{
-        display: block;   
-    }
-    .skl-list {
-        clear: left;
-        text-align: center;
-        margin: 0 1.6rem .8rem;
     }
     .b-sub-title{
         padding-top: 1.6rem;
@@ -228,6 +231,16 @@ body{
     padding-bottom: .3rem;
     vertical-align: inherit;
 }
+}
+.b-sub-title-small{
+    padding-top: 1.6rem;
+    margin-bottom: .2rem;
+}
+.b-sub-icon-small{
+    width: 5rem;
+    height: 5rem;
+    padding: .6rem;
+    margin: 1rem;
 }
 .b-sub-title-job{
     font-size: 3.0rem;
