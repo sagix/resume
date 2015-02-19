@@ -67,6 +67,11 @@ body{
     padding: 0 0 1rem;
     text-align:center;
 }
+.container-fix{
+    padding: 0 2rem;
+    max-width:70rem;
+    margin: auto;
+}
 @media print{
     .h-avatar{
         display:none;
@@ -74,12 +79,9 @@ body{
     .h-title{
         padding-top:6rem;
     }
-}
-
-.container-fix{
-    padding: 0 2rem;
-    max-width:64rem;
-    margin: auto;
+    .container-fix{
+        padding: 0;
+    }
 }
 .b-title:before{
     content:'';
@@ -104,6 +106,12 @@ body{
 @media print {
     .b-title-break  {page-break-before: always; padding-top:2rem; margin-bottom:0;}
     .b-title:before{display:none;}
+    .b-title{
+        margin:.8rem .5rem 0;
+    }
+    .b-title-text{
+        background-color: transparent;        
+    }
 }
 
 .b-sub{
@@ -117,11 +125,6 @@ body{
         border:none;
         margin-bottom:0;
     }
-}
-.b-sub-content > p,
-.b-sub-content > section{
-   padding-left:2rem;
-   padding-right:2rem;
 }
 .b-sub-content > section> h2{
     font-size: 2rem;
@@ -149,7 +152,8 @@ body{
     padding:2.8rem 0.6rem 0;
     margin:0 1.2rem 1.2rem;
 }
-.b-sub-title > a{
+.b-sub-title > a,
+.a-title{
   color:#000;
     text-decoration: none;
 }
@@ -157,11 +161,15 @@ body{
     width: 6rem;
     height: 6rem;
     color: #fff;
-    background-color: #888;
+    background-color: #ddd;
     border-radius: 100%;
     padding: 1.4rem;
     margin: 1rem;
     float:left;
+}
+.b-sub-icon > img{
+    width: 70%;
+    margin: 15%;
 }
 .b-sub-icon-android{
     background-color: #A4C639;    
@@ -182,10 +190,20 @@ body{
     fill: currentColor;
     vertical-align: text-bottom;
 }
+@media print{
+    .b-subub-icon{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
 @media(min-width:900px), print{
     .b-2{
         width:50%;
         display: inline-block;
+        float:left;
+    }
+    .b-1{
+        clear:left;
     }
     .b-sub-stars{
         display: block;   
@@ -200,19 +218,19 @@ body{
         margin-bottom: .2rem;
     }
     .b-sub-icon{
-    width: 5rem;
-    height: 5rem;
-    padding: .6rem;
-    margin: 1rem;
-}
+        width: 5rem;
+        height: 5rem;
+        padding: .6rem;
+        margin: 1rem;
+    }
     .icon-star{
     padding-bottom: .3rem;
     vertical-align: inherit;
 }
 }
 .b-sub-title-job{
-    font-size: 3.6rem;
-    padding:3rem 0;    
+    font-size: 3.0rem;
+    padding:1.6rem 0;    
 }
 .b-sub-desc{
     margin: 0;
@@ -221,9 +239,6 @@ body{
     color:#fff;
     font-weight:normal;
     font-style: normal;
-    position: relative;
-    top: -2.6rem;
-    margin-bottom: -2.6rem;
 }
 .b-sub-desc-item{
     display: inline-block;
@@ -560,4 +575,12 @@ body{
     width:4rem;   
     height:4rem;
     fill: currentColor;
+}
+
+.space-hor{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.clr-left{
+    clear: left;
 }
