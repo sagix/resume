@@ -35,10 +35,9 @@ margin-bottom: -3.3rem;
     border-bottom: .3rem solid #222;
     border-radius: 0rem;
 }
-.b-sub-android,
-.b-sub-web,
-.b-sub-gears{
-    background-image: none;
+.b-sub-icon > img{
+    -webkit-filter: contrast(2)grayscale(.7);
+    opacity: .7;
 }
 .b-sub-title{
     border-bottom-color: #222;   
@@ -51,14 +50,18 @@ border-color:#222;
 }
 .job,
 .job > em, .job-date,
-.b-sub-desc-item,
-.b-sub-desc-date{
+.b-sub-desc{
     background-color: #008000;
 }
 .job-name{
     color: #222;   
 }
-
+.b-sub-title > a, .a-title{
+    color: #008000;
+}
+.b-sub-icon {
+    background-color: #008000;
+}
 #side-nav {
     background-color: rgba(0, 0, 0, .9);
     box-shadow: none;
