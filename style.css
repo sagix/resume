@@ -269,6 +269,13 @@ body{
         float: inherit;
     }
 }
+@media print{
+    .b-sub-desc{
+        text-align: inherit;
+        float:right;
+        margin-top: 2.2rem;
+    }
+}
 
 .skl-list{
     list-style:none;
