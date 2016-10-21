@@ -182,6 +182,9 @@ body{
     background-color: #DD1139;
 }
 .b-sub-icon-book{
+    background-color: #DDDDDD;
+}
+.b-sub-icon-methodology{
     background-color: #DDA439;
 }
 .icon-star{
@@ -283,6 +286,12 @@ body{
 }
 .skl-list-first{
     margin-bottom:0;
+}
+.skl-list > li::after{
+    content: ", "
+}
+.skl-list > li:last-child::after{
+    content: "."
 }
 .skl-list > li{
     display: inline;
