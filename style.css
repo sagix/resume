@@ -110,7 +110,7 @@ body{
         margin:.8rem .5rem 0;
     }
     .b-title-text{
-        background-color: transparent;        
+        background-color: transparent;
     }
 }
 
@@ -173,16 +173,16 @@ body{
     margin: 15%;
 }
 .b-sub-icon-android{
-    background-color: #A4C639;    
+    background-color: #A4C639;
 }
 .b-sub-icon-web{
-    background-color: #39A4C6;    
+    background-color: #39A4C6;
 }
 .b-sub-icon-tools{
-    background-color: #DD1139;    
+    background-color: #DD1139;
 }
 .b-sub-icon-book{
-    background-color: #DDA439;    
+    background-color: #DDA439;
 }
 .icon-star{
     height: 1.8rem;
@@ -199,9 +199,9 @@ body{
 }
 @media(min-width:900px), (max-width:480px),  print{
     .b-sub-stars{
-        display: block;   
+        display: block;
     }
-    
+
     .skl-list {
         clear: left;
         text-align: center;
@@ -244,7 +244,7 @@ body{
 }
 .b-sub-title-job{
     font-size: 3.0rem;
-    padding:  1.6rem .6rem .6rem 1.6rem   
+    padding:  1.6rem .6rem .6rem 1.6rem
 }
 .b-sub-desc{
     margin: 0;
@@ -260,7 +260,7 @@ body{
     padding: .4rem 1rem;
 }
 .b-sub-desc-date{
-    font-weight: normal;   
+    font-weight: normal;
 }
 @media (max-width:800px){
     .b-sub-desc{
@@ -335,6 +335,9 @@ body{
 }
 .sl-deviantart{
     background-color:#9eb1a3;
+}
+.sl-ulule{
+    background-color:#00a6f0;
 }
 @media (min-width:1000px){
     .sl{
@@ -419,7 +422,7 @@ body{
 .border-menu:hover{
     outline:none;
     opacity: .7;
-    
+
 }
 .border-menu:active{
     opacity: 1;
@@ -446,8 +449,8 @@ body{
 }
 @media print{
     #btn-menu {
-        display: none;   
-    }   
+        display: none;
+    }
 }
 @media (max-width: 639px){
     #side-nav.close{
@@ -470,30 +473,30 @@ body{
     text-align: center
 }
 .sw-container > img{
-    margin: 1rem;   
+    margin: 1rem;
 }
 
 .qrcode{
-    display: none;   
+    display: none;
 }
 @media print{
     .qrcode{
         display: block;
         position: absolute;
-        margin: 3rem;            
+        margin: 3rem;
         height:12rem;
         width:12rem;
     }
     .qrcode-left{
-        left: 0;        
+        left: 0;
     }
     .qrcode-right{
-        right: 0;        
+        right: 0;
     }
 }
 
 .job{
-    text-align:center;  
+    text-align:center;
     margin-top: 3rem;
     margin-bottom: 3rem;
     color:#fff;
@@ -586,7 +589,7 @@ body{
 .loc-icon{
     display: block;
     margin: 1.2rem auto .4rem;
-    width:4rem;   
+    width:4rem;
     height:4rem;
     fill: currentColor;
 }
@@ -600,7 +603,7 @@ body{
 }
 .a-title-alone{
     display: block;
-    padding-top: .6rem;      
+    padding-top: .6rem;
 }
 .dont-break{
     page-break-inside: avoid;
