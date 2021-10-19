@@ -167,10 +167,15 @@ body{
     padding: 1.4rem;
     margin: 1rem;
     float:left;
+    overflow: hidden
 }
 .b-sub-icon > img{
     width: 70%;
     margin: 15%;
+}
+.b-sub-icon-fill > img{
+    width: 100%;
+    margin: 0%;
 }
 .b-sub-icon-android{
     background-color: #A4C639;
@@ -244,6 +249,9 @@ body{
     height: 5rem;
     padding: .6rem;
     margin: 1rem;
+}
+.b-sub-icon-fill{
+    padding: 0rem;
 }
 .b-sub-title-job{
     font-size: 3.0rem;

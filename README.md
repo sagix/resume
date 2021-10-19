@@ -1,4 +1,4 @@
-resume
+Resume
 ======
 
-NIcolas Mouchel Curriculum Vitæ
+Nicolas Mouchel Curriculum Vitæ
