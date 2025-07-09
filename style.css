@@ -146,6 +146,7 @@ body{
 .b-sub-skl{
     margin-left: .5rem;
     margin-right: .5rem;
+    min-height: 15rem;
 }
 
 .b-sub-title{
@@ -200,7 +201,7 @@ body{
     vertical-align: text-bottom;
 }
 @media print{
-    .b-subub-icon{
+    .b-sub-icon{
         padding-left: 0;
         padding-right: 0;
     }
